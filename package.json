@@ -1,0 +1,11 @@
+{
+  "name": "coding-cabin",
+  "packageManager": "yarn@4.4.1",
+  "scripts": {
+    "dev": "eleventy --serve",
+    "build": "eleventy"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^3.0.0"
+  }
+}
