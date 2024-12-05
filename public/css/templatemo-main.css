@@ -560,7 +560,8 @@ nav a:hover::before {
 }
 
 .fourth-content .item img {
-	max-width: 100%;
+	width: 640px;
+	height: 340px;
 	overflow: hidden;
 }
 
