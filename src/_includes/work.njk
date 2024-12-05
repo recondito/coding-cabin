@@ -1,27 +1,27 @@
 <div class="slide" id="4">
-                <div class="content fourth-content">
-                    <div class="container-fluid">
-                        <div class="row">
-                            {% for post in collections.posts %}
-                                <div class="col-md-4 col-sm-6">
-                                    <div class="item">
-                                    <div class="thumb">
-                                        <a href="{{post.data.image}}" data-lightbox="image-1" data-title="{{post.data.title}}" data-body="{{post.content | striptags}}">
-                                        <div class="hover-effect">
-                                            <div class="hover-content">
-                                            <h2>{{ post.data.title }}</h2>
-                                            <p>{{ post.content | striptags }}</p>
-                                            </div>
-                                        </div>
-                                        </a>
-                                        <div class="image">
-                                        <img src={{post.data.image}}>
-                                        </div>
-                                    </div>
+    <div class="content fourth-content">
+        <div class="container-fluid">
+            <div class="row">
+            {% for post in collections.posts %}
+                <div class="col-md-4 col-sm-6">
+                    <div class="item">
+                        <div class="thumb">
+                            <a href="{{post.data.image}}" data-lightbox="image-1" data-title="{{post.data.title}}" data-body="{{post.content | striptags}}">
+                                <div class="hover-effect">
+                                    <div class="hover-content">
+                                        <h2>{{ post.data.title }}</h2>
+                                        {{ post.content | safe }}
                                     </div>
                                 </div>
-                            {% endfor %}
+                            </a>
+                            <div class="image">
+                                <img src={{post.data.image}}>
+                            </div>
                         </div>
                     </div>
                 </div>
+            {% endfor %}
             </div>
+        </div>
+    </div>
+</div>
