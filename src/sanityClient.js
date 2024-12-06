@@ -8,3 +8,5 @@ const client = sanityClient({
 });
 
 module.exports = { client };
+
+// Push
