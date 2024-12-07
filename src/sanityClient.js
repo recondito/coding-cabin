@@ -1,5 +1,4 @@
 // Importamos el cliente de Sanity usando el named export
-require('dotenv').config();
 const { createClient } = require('@sanity/client');
 
 // Creamos el cliente de Sanity usando las variables de entorno
