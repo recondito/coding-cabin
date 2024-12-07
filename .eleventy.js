@@ -6,8 +6,6 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addPassthroughCopy('./src/fonts');
     eleventyConfig.addPassthroughCopy('./src/img');
     eleventyConfig.addPassthroughCopy('./src/js');
-    eleventyConfig.addPassthroughCopy('./scripts');
-    eleventyConfig.addPassthroughCopy('./src/sanityClient.js');
     
     eleventyConfig.addCollection('posts', async function() {
       const posts = await client.fetch('*[_type == "post"]');
