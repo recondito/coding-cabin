@@ -1,17 +1,12 @@
 {
   "name": "coding-cabin",
   "packageManager": "yarn@4.4.1",
-  "workspaces": [
-    "studio",
-    "data"
-  ],
   "scripts": {
     "dev": "eleventy --serve",
     "build": "eleventy"
   },
   "devDependencies": {
-    "@11ty/eleventy": "^3.0.0",
-    "@sanity/cli": "^3.66.1"
+    "@11ty/eleventy": "^3.0.0"
   },
   "dependencies": {
     "@sanity/client": "^6.24.1",
