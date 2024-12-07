@@ -50,5 +50,5 @@ slug: "${slug?.current || ''}"
   }
 }
 
-// Ejecutar el script.
+// Ejecutar el script
 exportPosts();
