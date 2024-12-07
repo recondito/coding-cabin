@@ -1,7 +1,7 @@
 // scripts/exportPosts.js
-const fs = require('fs');
-const path = require('path');
-const sanityClient = require('@sanity/client');
+import fs from 'fs';
+import path  from 'path';
+import sanityClient from "@sanity/client";
 
 // Configura el cliente de Sanity
 const client = sanityClient({
