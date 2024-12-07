@@ -49,7 +49,7 @@ slug: "${post.slug.current}"
   });
 }
 
-// Ejecutar la función de exportación.
+// Ejecutar la función de exportación
 exportPosts()
   .then(() => {
     console.log('Posts exportados exitosamente.');
