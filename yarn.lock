@@ -2347,6 +2347,27 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@sanity/block-content-to-html@npm:^2.0.0":
+  version: 2.0.0
+  resolution: "@sanity/block-content-to-html@npm:2.0.0"
+  dependencies:
+    "@sanity/block-content-to-hyperscript": "npm:^3.0.0"
+  checksum: 10c0/cc6cf2f617e129086eba4423723fc828ea93954f7e7983b0b21c103eeddbaecd86a62c2249e40192b6d3ca31d7f6fa4135681959b117333bdadb595589f8042f
+  languageName: node
+  linkType: hard
+
+"@sanity/block-content-to-hyperscript@npm:^3.0.0":
+  version: 3.0.0
+  resolution: "@sanity/block-content-to-hyperscript@npm:3.0.0"
+  dependencies:
+    "@sanity/generate-help-url": "npm:^0.140.0"
+    "@sanity/image-url": "npm:^0.140.15"
+    hyperscript: "npm:^2.0.2"
+    object-assign: "npm:^4.1.1"
+  checksum: 10c0/29f0fa39d2e39cd68e541968b27c1dfd0a31be87b3e10e26b2a654d1085583ad7c3d7590b3b867289739629e4fed5d87276bf877a95d28fa5f4fa48bd74afbcc
+  languageName: node
+  linkType: hard
+
 "@sanity/block-tools@npm:3.66.1":
   version: 3.66.1
   resolution: "@sanity/block-tools@npm:3.66.1"
@@ -2506,6 +2527,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@sanity/generate-help-url@npm:^0.140.0":
+  version: 0.140.0
+  resolution: "@sanity/generate-help-url@npm:0.140.0"
+  checksum: 10c0/95cc9b891a1e9e562affcbd3118b62de857a8285e2984862ec51f263e1116a1192834222e1356c5efe77f88cf16812e13ce1c37059561d488eb4413fb10637a1
+  languageName: node
+  linkType: hard
+
 "@sanity/generate-help-url@npm:^3.0.0":
   version: 3.0.0
   resolution: "@sanity/generate-help-url@npm:3.0.0"
@@ -2519,6 +2547,13 @@ __metadata:
   peerDependencies:
     react: ^18.3 || >=19.0.0-rc
   checksum: 10c0/480bdec25c6efbe23cf24365d82f453bd083f247971ce8cc3ff66584ead5d0013da28ae1458d56395de5a0b3cf0068e3ca28fa5466a61de0483cf42945db2c31
+  languageName: node
+  linkType: hard
+
+"@sanity/image-url@npm:^0.140.15":
+  version: 0.140.22
+  resolution: "@sanity/image-url@npm:0.140.22"
+  checksum: 10c0/2a8f64349be06e905bf1a9fc462ac94dd142ccdfa69925fbb33037467a8c0199400abade4fef19235de4586d5834d7847b3ebaa69bd18cfc1e1511b5eb35ad01
   languageName: node
   linkType: hard
 
@@ -3892,6 +3927,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"browser-split@npm:0.0.0":
+  version: 0.0.0
+  resolution: "browser-split@npm:0.0.0"
+  checksum: 10c0/3146037cc578e4eccac13ce59625ec5aed8aab6c0baa7ffb4cdc14e6b5d052eb79814966eaa7a8e242dac73c1f4e64938ba5712ec57315a9d17302f0edf21387
+  languageName: node
+  linkType: hard
+
 "browserify-zlib@npm:^0.1.4":
   version: 0.1.4
   resolution: "browserify-zlib@npm:0.1.4"
@@ -4170,6 +4212,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"class-list@npm:~0.1.0, class-list@npm:~0.1.1":
+  version: 0.1.1
+  resolution: "class-list@npm:0.1.1"
+  dependencies:
+    indexof: "npm:0.0.1"
+  checksum: 10c0/90a7a08da11dda0f7bf4c8dd2fcee073c0ff5262d94b51d69c6183b490a6de5812f95a78d66fc52130ca69fffbe6c3ed8dc8d8581701d9ff3d0a80f8fd69688a
+  languageName: node
+  linkType: hard
+
 "classnames@npm:^2.2.5":
   version: 2.5.1
   resolution: "classnames@npm:2.5.1"
@@ -4266,9 +4317,11 @@ __metadata:
   resolution: "coding-cabin@workspace:."
   dependencies:
     "@11ty/eleventy": "npm:^3.0.0"
+    "@sanity/block-content-to-html": "npm:^2.0.0"
     "@sanity/cli": "npm:^3.66.1"
     "@sanity/client": "npm:^6.24.1"
     "@sanity/image-url": "npm:^1.1.0"
+    dotenv: "npm:^16.4.7"
   languageName: unknown
   linkType: soft
 
@@ -5034,6 +5087,13 @@ __metadata:
   dependencies:
     is-obj: "npm:^2.0.0"
   checksum: 10c0/93f0d343ef87fe8869320e62f2459f7e70f49c6098d948cc47e060f4a3f827d0ad61e83cb82f2bd90cd5b9571b8d334289978a43c0f98fea4f0e99ee8faa0599
+  languageName: node
+  linkType: hard
+
+"dotenv@npm:^16.4.7":
+  version: 16.4.7
+  resolution: "dotenv@npm:16.4.7"
+  checksum: 10c0/be9f597e36a8daf834452daa1f4cc30e5375a5968f98f46d89b16b983c567398a330580c88395069a77473943c06b877d1ca25b4afafcdd6d4adb549e8293462
   languageName: node
   linkType: hard
 
@@ -6642,6 +6702,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"html-element@npm:^2.0.0":
+  version: 2.3.1
+  resolution: "html-element@npm:2.3.1"
+  dependencies:
+    class-list: "npm:~0.1.1"
+  checksum: 10c0/2b7ac28045e9b08a3e91d3d5d3f24abd76985a2b5c5b27044ff946e313f9263ca8e70007324862dc4f95583561815f4334a2df898b899273f1d24c4f7e4030d5
+  languageName: node
+  linkType: hard
+
 "html-encoding-sniffer@npm:^4.0.0":
   version: 4.0.0
   resolution: "html-encoding-sniffer@npm:4.0.0"
@@ -6726,6 +6795,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"hyperscript@npm:^2.0.2":
+  version: 2.0.2
+  resolution: "hyperscript@npm:2.0.2"
+  dependencies:
+    browser-split: "npm:0.0.0"
+    class-list: "npm:~0.1.0"
+    html-element: "npm:^2.0.0"
+  checksum: 10c0/4e63457827934bb1b8d5947053ab9d465f40b8bc631dfad0bd008a994689c2f6de19476f9d00f1250c693c1b4985bf891420c3e300874113556ea246af7bcaea
+  languageName: node
+  linkType: hard
+
 "i18next@npm:^23.2.7":
   version: 23.16.8
   resolution: "i18next@npm:23.16.8"
@@ -6786,6 +6866,13 @@ __metadata:
   version: 4.0.0
   resolution: "indent-string@npm:4.0.0"
   checksum: 10c0/1e1904ddb0cb3d6cce7cd09e27a90184908b7a5d5c21b92e232c93579d314f0b83c246ffb035493d0504b1e9147ba2c9b21df0030f48673fba0496ecd698161f
+  languageName: node
+  linkType: hard
+
+"indexof@npm:0.0.1":
+  version: 0.0.1
+  resolution: "indexof@npm:0.0.1"
+  checksum: 10c0/31f2b90def1d5429db21384a10d0ccc0d7bdbf0566d30d7fcabf99c7c2b7ffe420bb8fabadcce85e3d453b0e590c507de64401abe8c3eb238c878e78fcb98d33
   languageName: node
   linkType: hard
 
