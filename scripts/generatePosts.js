@@ -11,7 +11,7 @@ const query = `*[_type == "post"]{
   title,
   author,
   publishedAt,
-  content,
+  body,
   "imageUrl": mainImage.asset->url
 }`
 
@@ -39,9 +39,9 @@ title: "${post.title}"
 author: "${post.author || 'Unknown'}" 
 date: "${new Date(post.publishedAt).toISOString()}" 
 image: "${post.imageUrl}"
----`
+---\n`
 
-      const markdownContent = `${frontMatter}${post.content || 'No content available'}`
+      const markdownContent = `${frontMatter}${post.body || 'No content available'}`
 
       // Escribir el archivo Markdown en la carpeta de posts
       fs.writeFileSync(filePath, markdownContent)
