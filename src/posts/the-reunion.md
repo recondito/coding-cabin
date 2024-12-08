@@ -3,7 +3,6 @@ title: The Reunion.
 author: Miguel Santana
 date: 2024-08-24
 image: /img/the-reunion.jpg
-tags: posts
 ---
 Two years later...
 

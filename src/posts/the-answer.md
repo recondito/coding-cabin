@@ -3,7 +3,6 @@ title: The Answer.
 author: Miguel Santana
 date: 2024-10-07
 image: /img/the-answer.png
-tags: posts
 ---
 Time goes by. I almost forgot that I had applied to ATDEV. But there was hope. I got the TestGorilla invitation again! I get notified of this by the recruiter, Heidy Charles. There's a lot of good things I could say about Heidy but they wouldn't fit in a single page.
 

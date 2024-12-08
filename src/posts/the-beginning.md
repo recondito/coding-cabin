@@ -3,7 +3,6 @@ title: The Beginning.
 author: Miguel Santana
 date: 2022-05-25
 image: /img/the-beginning.png
-tags: posts
 ---
 Everything started in May the 25th, 2022. At the time I was working from home, however I wasn't a software developer. My previous job was mostly something that I had to do to cover the bills (College, transportation, the gym, etc) and something I've always wanted was to work in my field.
 
