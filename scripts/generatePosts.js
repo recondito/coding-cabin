@@ -2,6 +2,7 @@
 const fs = require('fs')
 const path = require('path')
 const client = require('./sanity') // El cliente de Sanity que configuramos
+const blockContentToMarkdown = require('@sanity/block-content-to-markdown');
 
 // Ruta donde se generarán los archivos Markdown
 const postsDir = path.join(__dirname, '../src/posts')
@@ -32,6 +33,11 @@ async function fetchPosts() {
       const fileName = `${post.title.toLowerCase().replace(/ /g, '-')}.md` // Usamos el título como nombre de archivo, con minúsculas y guiones
       const filePath = path.join(postsDir, fileName)
 
+      const bodyMarkdown = blockContentToMarkdown(post.body, {
+        projectId: 'lxyz888x',  // Asegúrate de usar tu ID de proyecto aquí
+        dataset: 'production',  // Nombre de tu dataset
+      });
+
       // Crear el Front Matter para el archivo Markdown
       const frontMatter = 
 `---
@@ -41,7 +47,7 @@ date: "${new Date(post.publishedAt).toISOString()}"
 image: "${post.imageUrl}"
 ---\n`
 
-      const markdownContent = `${frontMatter}${post.body || 'No content available'}`
+      const markdownContent = `${frontMatter}${bodyMarkdown || 'No content available'}`
 
       // Escribir el archivo Markdown en la carpeta de posts
       fs.writeFileSync(filePath, markdownContent)
