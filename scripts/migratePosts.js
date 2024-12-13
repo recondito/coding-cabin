@@ -3,17 +3,16 @@
 const fs = require('fs')
 const path = require('path')
 const matter = require('gray-matter')
-const client = require('./sanity')  // Importa el cliente de Sanity
-const sharp = require('sharp')  // Importa sharp para convertir imágenes
+const client = require('./sanity')  
+const sharp = require('sharp') 
 const dayjs = require('dayjs')
 const markdownIt = require('markdown-it')
 const markdownItAttrs = require('markdown-it-attrs')
 
 
-const postsDir = path.join(__dirname, '../posts')  // Ruta de la carpeta de posts
-const uploadsDir = path.join(__dirname, '../uploads')  // Ruta de la carpeta de uploads
+const postsDir = path.join(__dirname, '../posts')
+const uploadsDir = path.join(__dirname, '../uploads')
 
-// Función para generar el slug (manteniendo caracteres con tildes)
 function generateSlug(title, date) {
     const formattedDate = dayjs(date).format('YYYY-MM-DD')
     const slug = title
