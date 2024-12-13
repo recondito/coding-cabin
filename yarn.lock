@@ -4329,6 +4329,7 @@ __metadata:
     "@sanity/block-content-to-markdown": "npm:^0.0.6"
     "@sanity/client": "npm:^6.24.1"
     "@sanity/image-url": "npm:^1.1.0"
+    dotenv: "npm:^16.4.7"
   languageName: unknown
   linkType: soft
 
@@ -5094,6 +5095,13 @@ __metadata:
   dependencies:
     is-obj: "npm:^2.0.0"
   checksum: 10c0/93f0d343ef87fe8869320e62f2459f7e70f49c6098d948cc47e060f4a3f827d0ad61e83cb82f2bd90cd5b9571b8d334289978a43c0f98fea4f0e99ee8faa0599
+  languageName: node
+  linkType: hard
+
+"dotenv@npm:^16.4.7":
+  version: 16.4.7
+  resolution: "dotenv@npm:16.4.7"
+  checksum: 10c0/be9f597e36a8daf834452daa1f4cc30e5375a5968f98f46d89b16b983c567398a330580c88395069a77473943c06b877d1ca25b4afafcdd6d4adb549e8293462
   languageName: node
   linkType: hard
 
